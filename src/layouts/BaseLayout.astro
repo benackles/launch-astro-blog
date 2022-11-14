@@ -6,15 +6,6 @@ const { pageTitle, pageDescription } = Astro.props;
 ---
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-    
-        gtag('config', 'G-XXXXXXXXXX');
-   </script>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
@@ -30,16 +21,5 @@ const { pageTitle, pageDescription } = Astro.props;
     <script>
       import "../scripts/menu.js";
     </script>
-        <script>
-          /**
-          * The following event is sent when the page loads. You could
-          * wrap the event in a JavaScript function so the event is
-          * sent when the user performs some action.
-          */
-          gtag('event', 'screen_view', {
-            'app_name': 'myAppName',
-            'screen_name': 'Home'
-          });
-      </script> 
   </body>
 </html>
